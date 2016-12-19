@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <title>Destination</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
+  <link href="css/mystyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="imageDiv">
+    <img id="background" src="images/russia.jpeg" alt="russia" style="max-height:300px;max-width:100%;">
+    </div>
+    <div class="bottomDiv">
+        <h3 style="margin-left:30px">Don't fear the unknown</h3>
+        <input style="margin-left:30px" type="text" placeholder="I want to go...">
+        <button class="btn btn-primary">Search</button>
+    </div>
+    <div>
+        <h2>Hot Place To Travel</h2>
+      <dl>
+        <dt><a href="#" >Africa</a></dt>
+          <dd>
+            <a href="#">South Africa</a>
+            <a href="#">Egypt</a>
+            <a href="#">Morocco</a>
+          </dd>
+       </dl>
+       <dl>
+        <dt><a href="#" >America</a></dt>
+           <dd>
+            <a href="#">New York</a>
+            <a href="#">Los Angles</a>
+            <a href="#">Toronto</a>
+            <a href="#">Vancouver</a>
+           </dd>
+        </dl>
+       <dl>
+         <dt><a href="#" >Asia</a></dt>
+            <dd>
+            <a href="#">Tyoko</a>
+            <a href="#">Seoul</a>
+            <a href="#">Beijing</a>
+            </dd>
+        </dl>
+        <dl>
+         <dt><a href="#" >Oceania</a></dt>
+            <dd>
+            <a href="#">Sydney</a>
+            <a href="#">Melbourne</a>
+            <a href="#">Auckland</a>
+            </dd>
+        </dl>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script>
+    function set_body_width() { // set body width = window width
+    $('#background').width($(window).width());
+  }
+  $(document).ready(function() {
+    $(window).bind('resize', set_body_width);
+    set_body_width();
+  });
+</script>
+</body>
+</html>
